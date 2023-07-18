@@ -19,6 +19,12 @@ exports.men = async (req,res) => {
             Category
         })
 
+        res.status(201).json({
+            success : true,
+            message : "User created successfully",
+            user
+        })
+
     }catch(error){
         console.log(error);
         res.status(400).json({
@@ -34,12 +40,18 @@ exports.female = async (req,res) => {
     try{
 
         const user = await User.create({
-            pname,
+            // pname,
             brand,
             price,
             Color,
             Size ,
             Category
+        })
+
+        res.status(201).json({
+            success : true,
+            message : "User created successfully",
+            user
         })
 
     }catch(error){

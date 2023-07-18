@@ -1,9 +1,9 @@
 const mongoose = require('mongoose')
 
 const userSchema = new mongoose.Schema({
-    pname : {
-        type : String
-    },
+    // pname : {
+    //     type : String
+    // },
     brand :{
         type : String,
         required : true
