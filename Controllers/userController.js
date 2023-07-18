@@ -11,12 +11,12 @@ exports.men = async (req,res) => {
     try{
 
         const user = await User.create({
-            // pname,
+            pname,
             brand,
             price,
-            Color,
-            Size ,
-            Category
+            color,
+            size ,
+            category
         })
 
         res.status(201).json({
@@ -40,12 +40,12 @@ exports.female = async (req,res) => {
     try{
 
         const user = await User.create({
-            // pname,
+            pname,
             brand,
             price,
-            Color,
-            Size ,
-            Category
+            color,
+            size ,
+            category
         })
 
         res.status(201).json({
