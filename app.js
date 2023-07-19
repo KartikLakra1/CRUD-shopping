@@ -4,7 +4,7 @@ const connectToDb = require("./config/db.js");
 const cors = require('cors');
 
 
-const {home} = require('./Controllers/userController.js')
+// const {home} = require('./Controllers/userController.js')
 
 const app = express();
 
@@ -15,10 +15,6 @@ app.use(express.urlencoded({extended : true}))
 app.use(cors());
 
 
-
-// app.use('/' , (req,res) => {
-//     res.send("<h1>Hello my server is up and running </h1>")
-// })
 
 const userRouter = require('./Routers/userRouter.js')
 

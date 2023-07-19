@@ -3,7 +3,7 @@ const User = require('../models/userModels.js')
 
 // home
 exports.home = (req,res) => {
-    res.send('<h1>Welcome to Men and Women Dummy Data</h1>')
+    res.send('<h1>Welcome to Men and Women and also inheriting Dummy Data</h1>')
 }
 
 // men
